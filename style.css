@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(
+    to bottom right,
+    #c42e6d,
+    #e49c28
+  ); /* Gradient background from blue to purple */
+  color: #fff; /* White text color */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.purple-circle {
+  background-color: #3b2e58; /* Purple color for the circle */
+  width: 550px; /* Adjust the width as needed */
+  height: 550px; /* Adjust the height as needed */
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+.gold-circle {
+  background-color: #e49c28; /* Purple color for the circle */
+  width: 540px; /* Adjust the width as needed */
+  height: 540px; /* Adjust the height as needed */
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 0px; /* Adjust as needed */
+}
+.purple-circle2 {
+  background-color: #3b2e58; /* Purple color for the circle */
+  width: 535px; /* Adjust the width as needed */
+  height: 535px; /* Adjust the height as needed */
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 0px; /* Adjust as needed */
+}
+.golden-rim {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.7); /* Golden rim inside the circle */
+  position: absolute;
+  z-index: -1; /* Place the golden rim behind the content */
+}
+h1 {
+  font-size: 6em; /* Adjust the font size as needed */
+  justify-content: center;
+  display:flex;
+  align-items: center;
+  color: #e3992c;
+  position: absolute;
+  margin: 0;
+  top:35%;
+  z-index: 1; /* Place text above the circle */
+}
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 0.8em;
+}
+.start-button{
+  border-radius: 20px;
+  width:45%;
+  height:10%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:60%;
+  background-color: #e3992c;
+  font-size: 30px;
+  color: #3b2e58;
+  font-family:
+}
