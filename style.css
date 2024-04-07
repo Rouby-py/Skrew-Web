@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 body {
   background: linear-gradient(
     to bottom right,
@@ -5,7 +6,7 @@ body {
     #e49c28
   ); /* Gradient background from blue to purple */
   color: #fff; /* White text color */
-  font-family: Arial, sans-serif;
+  font-family: "Comfortaa";
   text-align: center;
   margin: 0;
   padding: 0;
@@ -18,8 +19,8 @@ body {
 
 .purple-circle {
   background-color: #3b2e58; /* Purple color for the circle */
-  width: 550px; /* Adjust the width as needed */
-  height: 550px; /* Adjust the height as needed */
+  width: 700px; /* Adjust the width as needed */
+  height: 700px; /* Adjust the height as needed */
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -30,8 +31,8 @@ body {
 }
 .gold-circle {
   background-color: #e49c28; /* Purple color for the circle */
-  width: 540px; /* Adjust the width as needed */
-  height: 540px; /* Adjust the height as needed */
+  width: 670px; /* Adjust the width as needed */
+  height: 670px; /* Adjust the height as needed */
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -42,8 +43,8 @@ body {
 }
 .purple-circle2 {
   background-color: #3b2e58; /* Purple color for the circle */
-  width: 535px; /* Adjust the width as needed */
-  height: 535px; /* Adjust the height as needed */
+  width: 660px; /* Adjust the width as needed */
+  height: 660px; /* Adjust the height as needed */
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -52,14 +53,24 @@ body {
   position: relative;
   margin-bottom: 0px; /* Adjust as needed */
 }
+
 .golden-rim {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.7); /* Golden rim inside the circle */
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Golden rim inside the circle */
   position: absolute;
   z-index: -1; /* Place the golden rim behind the content */
 }
+
+.howtoplay{
+  position: absolute;
+  top:2%;
+  right:5%;
+  width:10px;
+  height:10px;
+}
+
 h1 {
   font-size: 6em; /* Adjust the font size as needed */
   justify-content: center;
@@ -68,7 +79,10 @@ h1 {
   color: #e3992c;
   position: absolute;
   margin: 0;
-  top:35%;
+  top:30%;
+  text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+  user-select: none;
+  font-weight:bold;
   z-index: 1; /* Place text above the circle */
 }
 footer {
@@ -77,17 +91,93 @@ footer {
   left: 10px;
   font-size: 0.8em;
 }
-.start-button{
+
+/*join button*/
+.join-button{
   border-radius: 20px;
-  width:45%;
-  height:10%;
+  width:30%;
+  height:12%;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  top:60%;
+  top:65%;
+  left:15%;
   background-color: #e3992c;
-  font-size: 30px;
+  font-size: 45px;
   color: #3b2e58;
-  font-family:
+  border:2px;
+  border-color:#1e1435;
+  border-style:solid;
+  text-shadow: 1px 3px 3px rgba(0,0,0,0.2);
+  cursor:pointer;
+  font-weight: bold;
+  font-family: "Comfortaa";
+  transition: all 0.2s ease;
+}
+.join-button:hover{
+  background-color: #1e1435;
+  color: #e49c28;
+  border-color:#e49c28;
+}
+
+/*create button*/
+.create-button{
+  border-radius: 20px;
+  width:30%;
+  height:12%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:65%;
+  right:15%;
+  background-color: #e3992c;
+  font-size: 45px;
+  color: #3b2e58;
+  border:3px;
+  border-color:#1e1435;
+  border-style:solid;
+  cursor:pointer;
+  font-weight: bold;
+  font-family: "Comfortaa";
+  transition: all 0.2s ease;
+}
+.create-button:hover{
+  background-color: #1e1435;
+  color: #e49c28;
+  border-color:#e49c28;
+}
+
+
+/*Name input*/
+.Name-Input{
+  top:50%;
+  position: absolute;
+  width:400px;
+  height:50px;
+  border-radius:80px;
+  font-size:30px;
+  background-color:#1e1435;
+  border:2px;
+  border-color:#e3992c;
+  border-style:solid;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.Name-Input:hover{
+  border: 2px solid #e49c28;
+  border-color: #e49c28;
+  box-shadow: 0 0 10px #e49c28;
+}
+.Name-Input:focus{
+  border: 2px solid #e49c28;
+  border-color: #e49c28;
+  box-shadow: 0 0 10px #e49c28;
+  outline:None;
+  
 }
