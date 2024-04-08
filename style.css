@@ -15,6 +15,9 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  min-width: 50%;
+  min-height:50%;
+  flex-direction: column;
 }
 
 .purple-circle {
@@ -64,39 +67,77 @@ body {
 }
 
 .question-mark {
+  width:70px;
+  height:70px;
   position: absolute;
-  left: 92%;
+  right: 1%;
   top: 3%;
+  border-radius:50%;
+  background-color:#3b2e58;
+  border:4.5px;
+  border-style:solid;
+  border-color:#1e143500;
+  transition: 0.2s ease;
 }
-
-.question-mark .howtoplay2 {
-  display: none;
+.howtoplay{
+  font-size:45px;
+  text-decoration: inherit;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  color:#e49c28;
   position: absolute;
-  right: 0;
-  top: 0;
+  top:9px;
+  left:13px;
+  font-weight:bold;
+  text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+  transition: 0.2s ease;
 }
-.question-mark:hover .howtoplay2 {
-  display: block;
+.question-mark:hover{
+  border-color:#3b2e58;
+  background-color: #e49c28;
+  cursor: pointer;
+}
+.question-mark:hover  .howtoplay{
+  color:#3b2e58;
 }
 
 .back-button {
+  width:70px;
+  height:70px;
   position: absolute;
-  right: 92%;
+  left: 1%;
   top: 3%;
+  border-radius:50%;
+  background-color:#3b2e58;
+  border:4.5px;
+  border-style:solid;
+  border-color:#1e143500;
+  transition: 0.2s ease;
+}
+.back{
+  font-size:70px;
+  text-decoration: inherit;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  color:#e49c28;
+  position: absolute;
+  top:-4px;
+  left:-2px;
+  font-weight:bold;
+  text-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+  transition: 0.2s ease;
+}
+.back-button:hover{
+  border-color:#3b2e58;
+  background-color: #e49c28;
+  cursor: pointer;
+}
+.back-button:hover  .back{
+  color:#3b2e58;
 }
 
-.back-button .back2 {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.back-button:hover .back2 {
-  display: block;
-}
-.back-button:hover .back1 {
-  display: none;
-}
 .skrew-header{
   font-size: 6em; /* Adjust the font size as needed */
   justify-content: center;
@@ -223,8 +264,34 @@ footer {
   text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
   
 }
-.mainobjective-header{
-  font-size:3em;
+.prev-slide{
+  border-radius:50%;
+  background-color:#3b2e58;
+  position: relative;
+  left:-15%;
+}
+.prev-slide img{
+  width:50px;
+  height:50px;
+  position:relative;
+  border-radius: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.next-slide{
+  width:80px;
+  height:80px;
+  position:absolute;
+  border-radius: 20px;
+  top:56.5%;
+  right:5%;
+  background-color:white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .slides-container{
   width:60%;
@@ -239,4 +306,35 @@ footer {
   display:flex;
   align-items: center;
   justify-content: center;
+}
+.introduction{
+  width:900px;
+  height:50px;
+  background-color:white;
+  position:relative;
+}
+.objective{
+  width:50px;
+  height:50px;
+  background-color:black;
+  position:relative;
+}
+.rules{
+  width:50px;
+  height:50px;
+  background-color:gray;
+  position:relative;
+}
+.cards{
+  width:50px;
+  height:50px;
+  background-color:yellow;
+  position:relative;
+}
+.slides{
+  display:flex;
+  overflow-x:auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
 }
