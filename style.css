@@ -3,7 +3,7 @@ body {
   background: linear-gradient(
     to bottom right,
     #c42e6d,
-    #e49c28
+    #3b2e58
   ); /* Gradient background from blue to purple */
   color: #fff; /* White text color */
   font-family: "Comfortaa";
@@ -173,9 +173,9 @@ footer {
   background-color: #e3992c;
   font-size: 45px;
   color: #3b2e58;
-  border:2px;
+  border:3px;
   border-color:#1e1435;
-  border-style:solid;
+  border-style:none;
   text-shadow: 1px 3px 3px rgba(0,0,0,0.2);
   cursor:pointer;
   font-weight: bold;
@@ -183,6 +183,7 @@ footer {
   transition: all 0.2s ease;
 }
 .join-button:hover{
+  border-style:solid;
   background-color: #1e1435;
   color: #e49c28;
   border-color:#e49c28;
@@ -198,19 +199,20 @@ footer {
   align-items: center;
   justify-content: center;
   top:65%;
+  border-style:none;
   right:15%;
   background-color: #e3992c;
   font-size: 45px;
   color: #3b2e58;
   border:3px;
   border-color:#1e1435;
-  border-style:solid;
   cursor:pointer;
   font-weight: bold;
   font-family: "Comfortaa";
   transition: all 0.2s ease;
 }
 .create-button:hover{
+  border-style:solid;
   background-color: #1e1435;
   color: #e49c28;
   border-color:#e49c28;
