@@ -15,24 +15,54 @@
         </div>
         </a>
         <h1 class="howtoplay-header">HOW TO PLAY</h1>
-        <div class="slides-container">
-            <a class="prev-slide"><img src="backarrow.png"></a>
-            <div class="slides">
-                <div class="introduction">
-                    
-                </div>
-                <div class="objective">
-    
-                </div>
-                <div class="rules">
-    
-                </div>
-                <div class="cards">
-    
-                </div>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+               <div id="overflow">
+                  <div class="inner">
+                     <div class="slide slide_1">
+                        <div class="slide-content">
+                           <h2>Introduction</h2>
+                           <p></p>
+                        </div>
+                     </div>
+                     <div class="slide slide_2">
+                        <div class="slide-content">
+                           <h2>Objective</h2>
+                           <p></p>
+                        </div>
+                     </div>
+                     <div class="slide slide_3">
+                        <div class="slide-content">
+                           <h2>Cards</h2>
+                           <p></p>
+                        </div>
+                     </div>
+                     <div class="slide slide_4">
+                        <div class="slide-content">
+                           <h2>Rounds</h2>
+                           <p></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-
-        </div>
+            <div id="controls">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+            </div>
+         </div>
     </div>
 </body>
 </html>
