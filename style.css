@@ -66,12 +66,11 @@ body {
 .howtoplay{
   position: absolute;
   top:2%;
-  right:5%;
-  width:10px;
-  height:10px;
+  right:1%;
+  
 }
 
-h1 {
+.skrew-header{
   font-size: 6em; /* Adjust the font size as needed */
   justify-content: center;
   display:flex;
@@ -157,7 +156,7 @@ footer {
   width:400px;
   height:50px;
   border-radius:80px;
-  font-size:30px;
+  font-size:35px;
   background-color:#1e1435;
   border:2px;
   border-color:#e3992c;
@@ -167,7 +166,7 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  
+  transition: all 0.2s ease;
 }
 .Name-Input:hover{
   border: 2px solid #e49c28;
@@ -180,4 +179,36 @@ footer {
   box-shadow: 0 0 10px #e49c28;
   outline:None;
   
+}
+
+
+
+/*-------------How to play page------------*/
+.howtoplay-header{
+  font-size:5em;
+  top:-350px;
+  display:center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+  
+}
+.mainobjective-header{
+  font-size:3em;
+}
+.slides-container{
+  width:60%;
+  height:50%;
+  margin-left:auto;
+  margin-right:auto;
+  top:40%;
+  position: absolute;
+  background-color: white;
+  border-radius: 30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
