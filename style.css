@@ -79,6 +79,24 @@ body {
   display: block;
 }
 
+.back-button {
+  position: absolute;
+  right: 92%;
+  top: 3%;
+}
+
+.back-button .back2 {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.back-button:hover .back2 {
+  display: block;
+}
+.back-button:hover .back1 {
+  display: none;
+}
 .skrew-header{
   font-size: 6em; /* Adjust the font size as needed */
   justify-content: center;
