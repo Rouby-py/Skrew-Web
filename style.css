@@ -22,12 +22,9 @@ body {
 .skrew-title{
   user-select: none;
   pointer-events:none;
-  font-size: 90px;
   display: flex;
-  top:30%;
-  color: #e3992c;
-  font-weight: 1000;
-  text-shadow: -1px -1px 0 #1e1435, 1px -1px 0 #1e1435, -1px 1px 0 #1e1435, 1px 1px 0 #1e1435, 3px 3px 5px #000000;
+  width: 50%;
+  top:10%;
   position: absolute;
 }
 .purple-circle {
@@ -167,6 +164,8 @@ footer {
 
 /*join button*/
 .join-button{
+  border-style:solid;
+  border-color: #fff;
   border-radius: 20px;
   width:30%;
   height:12%;
@@ -180,8 +179,6 @@ footer {
   font-size: 45px;
   color: #3b2e58;
   border:3px;
-  border-color:#1e1435;
-  border-style:none;
   text-shadow: 1px 3px 3px rgba(0,0,0,0.2);
   cursor:pointer;
   font-weight: bold;
@@ -199,6 +196,8 @@ footer {
 /*create button*/
 .create-button{
   border-radius: 20px;
+  border-style:solid;
+  border-color: #fff;
   width:30%;
   height:12%;
   position: absolute;
@@ -206,13 +205,11 @@ footer {
   align-items: center;
   justify-content: center;
   top:65%;
-  border-style:none;
   right:15%;
   background-color: #e3992c;
   font-size: 45px;
   color: #3b2e58;
   border:3px;
-  border-color:#1e1435;
   cursor:pointer;
   font-weight: bold;
   font-family: "Comfortaa";
@@ -229,12 +226,13 @@ footer {
 
 /*Name input*/
 .Name-Input{
-  top:50%;
+  top:44%;
   position: absolute;
-  width:400px;
-  height:50px;
+  width:550px;
+  height:60px;
   border-radius:80px;
   font-size:35px;
+  opacity: 80%;
   background-color:#1e1435;
   border:2px;
   border-color:#e3992c;
@@ -265,14 +263,14 @@ footer {
 /*-------------How to play page------------*/
 .howtoplay-header{
   font-size:5em;
-  top:-300px;
+  top:0px;
   display:center;
   text-align: center;
   align-items: center;
   justify-content: center;
   position: relative;
   user-select: none;
-  text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
   
 }
 .prev-slide{
@@ -304,9 +302,20 @@ footer {
   justify-content: center;
 
 }
+.cards-header{
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  width: 500px;
+  opacity: 100%;
+  pointer-events:none;
+}
 #slider {
   margin: 0 auto;
-  width: 700px;
+  width: 1500px;
   max-width: 100%;
   text-align: center;
 }
@@ -352,8 +361,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 150%;
   color: #fff;
+  
 }
 #slides .slide_1 {
   background: #3b2e58;
@@ -383,23 +393,29 @@ footer {
 #controls label:hover {
   opacity: 1;
 }
-#slide1:checked ~ #controls label:nth-child(2),
-#slide2:checked ~ #controls label:nth-child(3),
-#slide3:checked ~ #controls label:nth-child(4),
+#slide1:checked ~ #controls label:nth-child(2), 
+#slide2:checked ~ #controls label:nth-child(3), 
+#slide3:checked ~ #controls label:nth-child(4), 
 #slide4:checked ~ #controls label:nth-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
   float:right;
-  margin: 0 -50px 0 0;
-  display: block;
+  margin: 0 0 0 0;
+  height: 750px;
+  width: 750px;
+  top: -1139%;
+  right: 0%;
+  position: absolute;
 }
-#slide1:checked ~ #controls label:nth-last-child(2),
-#slide2:checked ~ #controls label:nth-last-child(3),
-#slide3:checked ~ #controls label:nth-last-child(4),
-#slide4:checked ~ #controls label:nth-last-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
-  float:left;
-  margin: 0 0 0 -50px;
-  display: block;
+#slide1:checked ~ #controls label:nth-child(4), 
+#slide2:checked ~ #controls label:nth-child(1), 
+#slide3:checked ~ #controls label:nth-child(2), 
+#slide4:checked ~ #controls label:nth-child(3) {
+  float:right;
+  margin: 0 0 0 0;
+  height: 750px;
+  width: 750px;
+  top: -1139%;
+  left: 0%;
+  position: absolute;
 }
 #bullets {
   margin: 150px 0 0;
@@ -413,23 +429,26 @@ footer {
   background: #ccc;
   margin: 0 10px;
 }
-#slide1:checked ~ #bullets label:nth-child(1),
-#slide2:checked ~ #bullets label:nth-child(2),
-#slide3:checked ~ #bullets label:nth-child(3),
+#slide1:checked ~ #bullets label:nth-child(1), 
+#slide2:checked ~ #bullets label:nth-child(2), 
+#slide3:checked ~ #bullets label:nth-child(3), 
 #slide4:checked ~ #bullets label:nth-child(4) {
   background: #444;
 }
 @media screen and (max-width: 900px) {
-  #slide1:checked ~ #controls label:nth-child(2),
-  #slide2:checked ~ #controls label:nth-child(3),
-  #slide3:checked ~ #controls label:nth-child(4),
-  #slide4:checked ~ #controls label:nth-child(1),
-  #slide1:checked ~ #controls label:nth-last-child(2),
-  #slide2:checked ~ #controls label:nth-last-child(3),
-  #slide3:checked ~ #controls label:nth-last-child(4),
-  #slide4:checked ~ #controls label:nth-last-child(1) {
-     margin: 0;
-  }
+  #slide1:checked ~ #controls label:nth-child(4), 
+	#slide2:checked ~ #controls label:nth-child(1), 
+	#slide3:checked ~ #controls label:nth-child(2), 
+	#slide4:checked ~ #controls label:nth-child(3) {
+		margin: 0;
+	}
+
+	#slide1:checked ~ #controls label:nth-child(2), 
+	#slide2:checked ~ #controls label:nth-child(3), 
+	#slide3:checked ~ #controls label:nth-child(4), 
+	#slide4:checked ~ #controls label:nth-child(1){
+		margin: 0;
+	}
   #slides {
      max-width: calc(100% - 140px);
      margin: 0 auto;
