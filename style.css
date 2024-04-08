@@ -3,7 +3,7 @@ body {
   background: linear-gradient(
     to bottom right,
     #c42e6d,
-    #e49c28
+    #1e1435
   ); /* Gradient background from blue to purple */
   color: #fff; /* White text color */
   font-family: "Comfortaa";
@@ -19,7 +19,17 @@ body {
   min-height:50%;
   flex-direction: column;
 }
-
+.skrew-title{
+  user-select: none;
+  pointer-events:none;
+  font-size: 90px;
+  display: flex;
+  top:30%;
+  color: #e3992c;
+  font-weight: 1000;
+  text-shadow: -1px -1px 0 #1e1435, 1px -1px 0 #1e1435, -1px 1px 0 #1e1435, 1px 1px 0 #1e1435, 3px 3px 5px #000000;
+  position: absolute;
+}
 .purple-circle {
   background-color: #3b2e58; /* Purple color for the circle */
   width: 700px; /* Adjust the width as needed */
@@ -139,18 +149,14 @@ body {
 }
 
 .skrew-header{
-  font-size: 6em; /* Adjust the font size as needed */
-  justify-content: center;
-  display:flex;
-  align-items: center;
-  color: #e3992c;
   position: absolute;
-  margin: 0;
-  top:30%;
-  text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
-  user-select: none;
-  font-weight:bold;
-  z-index: 1; /* Place text above the circle */
+  top: 20%;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  width: 500px;
+  opacity: 50%;
+  pointer-events:none;
 }
 footer {
   position: fixed;
@@ -173,16 +179,18 @@ footer {
   background-color: #e3992c;
   font-size: 45px;
   color: #3b2e58;
-  border:2px;
+  border:3px;
   border-color:#1e1435;
-  border-style:solid;
+  border-style:none;
   text-shadow: 1px 3px 3px rgba(0,0,0,0.2);
   cursor:pointer;
   font-weight: bold;
   font-family: "Comfortaa";
   transition: all 0.2s ease;
+  z-index: 1;
 }
 .join-button:hover{
+  border-style:solid;
   background-color: #1e1435;
   color: #e49c28;
   border-color:#e49c28;
@@ -198,19 +206,21 @@ footer {
   align-items: center;
   justify-content: center;
   top:65%;
+  border-style:none;
   right:15%;
   background-color: #e3992c;
   font-size: 45px;
   color: #3b2e58;
   border:3px;
   border-color:#1e1435;
-  border-style:solid;
   cursor:pointer;
   font-weight: bold;
   font-family: "Comfortaa";
   transition: all 0.2s ease;
+  z-index: 1;
 }
 .create-button:hover{
+  border-style:solid;
   background-color: #1e1435;
   color: #e49c28;
   border-color:#e49c28;
@@ -235,6 +245,7 @@ footer {
   justify-content: center;
   text-align: center;
   transition: all 0.2s ease;
+  z-index: 1;
 }
 .Name-Input:hover{
   border: 2px solid #e49c28;
